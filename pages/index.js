@@ -1,17 +1,14 @@
+import React from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
+
 import db from '../db.json';
 import Widget from '../src/components/Widget'
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
-
-/* const BackgoundImage = styled.div`
-  background-image: url(${db.bg});
-  flex: 1;
-  background-size: cover;
-  background-position: center;
-`; */
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -25,16 +22,38 @@ export const QuizContainer = styled.div`
 `
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head>
+        <title>Alura Quiz - CDZ</title>        
+      </Head>
       <QuizContainer>
         <Widget>
           <Widget.Header>
             <h1>Quiz CDZ</h1>
           </Widget.Header>
           <Widget.Content>           
-
-            <p>loren ipson dolor sit amet...</p>
+            <form onSubmit={function (event) {
+              event.preventDefault();
+              
+              router.push(`/quiz?name=${name}`);
+              console.log("Fazendo submissão por meio do React")
+            }}
+            >              
+              <input 
+                onChange={function (event) {
+                  setName(event.target.value);
+                }}  
+                placeholder="Digite seu nome" 
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar 
+                {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
 
