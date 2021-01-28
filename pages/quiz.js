@@ -6,7 +6,8 @@ import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
 
-function LoadingWidget() {
+function LoadingWidget(spinner) {
+  
   return (
     <Widget>
       <Widget.Header>
@@ -14,7 +15,15 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content>
-        [Desafio do Loading]
+        <img
+          alt="Spinner"
+          style={{
+            width: '100%',
+            height: '150px',
+            objectFit: 'cover',
+          }}
+          src={"https://64.media.tumblr.com/7fd2c2c83c0be8ad5063110a0d83e386/tumblr_mnu3n1gz211qzdpr4o1_500.gifv"}
+        />
       </Widget.Content>
     </Widget>
   );

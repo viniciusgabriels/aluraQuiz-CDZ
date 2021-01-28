@@ -4,25 +4,75 @@
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://www.latercera.com/resizer/9A7fy8o9sanN0O8LlhKUGPQAGjY=/800x0/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/SBAKZ775R5CDLEG744P55IVADI.gif",
+        "title": "Oficialmente, à cada geração existem quantos cavaleiros no santuário?",
         "description": "Essa é pra aquecer",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "12",
+          "120",
+          "88",
+          "100"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://pa1.narvii.com/6886/5fe515eb7cbc0fa67841ec5659497fa6b59e6b82r1-480-360_hq.gif",
+        "title": "Quantas armas compoem a armadura de Libra?",
+        "description": "Essa tá fácil",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+          "12",
+          "6",
+          "2",
+          "Nenhuma"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/8f/d6/88/8fd688932641de7f48bb07d2572c196f.gif",
+        "title": "Qual golpe é proibído por Athena pela sua força de destruição e que exige 3 cavaleiros para executá-lo?",
+        "description": "Essa é pra quem foi até a saga de Hades",
+        "answer": 2,
+        "alternatives": [
+          "Fim dos tempos",
+          "Explosão galática",
+          "Exclamação de Athena",
+          "Kamehameha"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/a3/e3/e0/a3e3e0e96386b24507d73541579a52a8.gif",
+        "title": "Qual o nome do criador da Fundação Graad, que treinou Seyia e os outros órfãos?",
+        "description": "Vai Seyia!",
+        "answer": 1,
+        "alternatives": [
+          "Saori Kido",
+          "Mitsumasa Kido",
+          "Tokumaru Tatsumi",
+          "Julian Solo"
+        ]
+      },
+      {
+        "image": "https://64.media.tumblr.com/tumblr_mc1wmiiCj41qgaaado5_250.gifv",
+        "title": "Quem é a irmã de Seyia?",
+        "description": "???",
+        "answer": 2,
+        "alternatives": [
+          "Marin",
+          "Shina",
+          "Seyka",
+          "Saori"
+        ]
+      },
+      {
+        "image": "https://pa1.narvii.com/6901/533dfd865358da560579cb15d97055e2c2f6dffer1-540-388_hq.gif",
+        "title": "Qual o nome da competição que tinha como premiação a armadura de Sagitário?",
+        "description": "Eu tava lá, eu era a corrente",
+        "answer": 1,
+        "alternatives": [
+          "Duelo Sagrado",
+          "Torneio Galático",
+          "Guerra Infinita",
+          "Torneio Eterno"
         ]
       }
     ],
