@@ -5,8 +5,8 @@
     "questions": [
       {
         "image": "https://www.latercera.com/resizer/9A7fy8o9sanN0O8LlhKUGPQAGjY=/800x0/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/SBAKZ775R5CDLEG744P55IVADI.gif",
-        "title": "Oficialmente, à cada geração existem quantos cavaleiros no santuário?",
-        "description": "Essa é pra aquecer",
+        "title": "Oficialmente, quantos cavaleiros existem no santuário a cada geração?",
+        "description": "Por Athenaaa!",
         "answer": 2,
         "alternatives": [
           "12",
@@ -30,7 +30,7 @@
       {
         "image": "https://i.pinimg.com/originals/8f/d6/88/8fd688932641de7f48bb07d2572c196f.gif",
         "title": "Qual golpe é proibído por Athena pela sua força de destruição e que exige 3 cavaleiros para executá-lo?",
-        "description": "Essa é pra quem foi até a saga de Hades",
+        "description": "Você disse saga de Hades?",
         "answer": 2,
         "alternatives": [
           "Fim dos tempos",
@@ -54,7 +54,7 @@
       {
         "image": "https://64.media.tumblr.com/tumblr_mc1wmiiCj41qgaaado5_250.gifv",
         "title": "Quem é a irmã de Seyia?",
-        "description": "???",
+        "description": "Só para os fortes",
         "answer": 2,
         "alternatives": [
           "Marin",
@@ -70,7 +70,7 @@
         "answer": 1,
         "alternatives": [
           "Duelo Sagrado",
-          "Torneio Galático",
+          "Guerra Galática",
           "Guerra Infinita",
           "Torneio Eterno"
         ]
