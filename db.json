@@ -1,7 +1,7 @@
 {
     "bg": "https://i.pinimg.com/originals/5e/1d/ba/5e1dba6add0f257a526fa5e511469839.jpg",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "Quiz CDZ",
+    "description": "Divirta-se testando os seus conhecimentos sobre Cavaleiros do Zodíaco",
     "questions": [
       {
         "image": "https://www.latercera.com/resizer/9A7fy8o9sanN0O8LlhKUGPQAGjY=/800x0/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/SBAKZ775R5CDLEG744P55IVADI.gif",
@@ -77,7 +77,8 @@
       }
     ],
     "external": [
-      ""
+      "https://darksouls-quiz.gui-leandro.vercel.app/",
+      "https://aluraquiz-marvel.omariosouto.vercel.app/"
     ],
     "theme": {
       "colors": {

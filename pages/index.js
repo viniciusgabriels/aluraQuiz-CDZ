@@ -1,9 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 
 import db from '../db.json';
-import Widget from '../src/components/Widget'
+import Widget from '../src/components/Widget';
+import Link from '../src/components/Link';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
@@ -18,14 +21,27 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Alura Quiz - CDZ</title>        
+        <title>Alura Quiz - {db.title}</title>
+        
       </Head>
       <QuizContainer>
-        <Widget>
+					
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+					variants={{
+            show: { opacity: 1, y: '0' },
+             hidden: { opacity: 0, y: '100%' },
+          }}
+           initial="hidden"
+           animate="show"
+				>	
+
           <Widget.Header>
-            <h1>Quiz CDZ</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>           
+			<p>{db.description}</p>					   
             <form onSubmit={function (event) {
               event.preventDefault();
               
@@ -46,16 +62,57 @@ export default function Home() {
           </Widget.Content>
         </Widget>
 
-        <Widget>
-        <Widget.Content>
-            <h1>Quiz CDZ</h1>
+        <Widget
+           as={motion.section}
+           transition={{ delay: 0.5, duration: 0.5 }}
+           variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+           }}
+            initial="hidden"
+            animate="show"
+        >
 
-            <p>loren ipson dolor sit amet...</p>
+        <Widget.Content>
+            <h1>Quizes da galera</h1>
+
+            <ul>
+              {db.external.map((linkExterno) => {
+                const [projectName, githubUser] = linkExterno
+                  .replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+
+                return (
+                  <li key={linkExterno}>
+                    <Widget.Topic
+                      as={Link}
+                      href={`/quiz/${projectName}___${githubUser}`}
+                      >
+                      {`${githubUser} > ${projectName}`}                    
+                    </Widget.Topic>
+                  </li>
+                  );
+              })}
+            </ul>
+
           </Widget.Content>
         </Widget>
-        <Footer />
+
+        <Footer 
+           as={motion.section}
+           transition={{ delay: 0.85, duration: 0.5 }}
+           variants={{
+             show: { opacity: 1, y: '0' },
+             hidden: { opacity: 0, y: '100%' },
+           }}
+            initial="hidden"
+            animate="show"
+        />
+		  
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/viniciusgabriels" />
     </QuizBackground>
-  ) 
+  ); 
 }

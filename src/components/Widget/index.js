@@ -29,6 +29,7 @@ Widget.Header = styled.header`
   align-items: center;
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.mainBg};
 
   * {
     margin: 0;
@@ -41,7 +42,7 @@ Widget.Content = styled.div`
     margin-top: 0;
   }
   & > *:first-child {
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
   ul {
     list-style: none;
